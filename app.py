@@ -72,13 +72,16 @@ if prediction_proba > 0.5:
 else:
     st.write('The customer is not likely to churn.')
 
-hide_st_style = '''
-<style>
-#MainMenu {visibility:hidden;}  /* Hides the hamburger menu */
-footer {visibility:hidden;}  /* Hides the footer */
-button[title="Fork"] {visibility:hidden;}  /* Hides the Fork button */
-</style>
-'''
+
+
+# removing the Humburgers 
+# hide_st_style = '''
+# <style>
+# #MainMenu {visibility:hidden;}  /* Hides the hamburger menu */
+# footer {visibility:hidden;}  /* Hides the footer */
+# button[title="Fork"] {visibility:hidden;}  /* Hides the Fork button */
+# </style>
+# '''
 
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
