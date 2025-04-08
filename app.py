@@ -8,6 +8,15 @@ import pickle
 # Load the trained model
 model = tf.keras.models.load_model('model.h5')
 
+hide_st_style = '''
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+</style>
+'''
+st.markdown(hide_st_style,unsafe_allow_html=True)
+
+
 # Load the encoders and scaler
 with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
