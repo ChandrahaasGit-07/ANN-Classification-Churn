@@ -82,6 +82,5 @@ else:
 # button[title="Fork"] {visibility:hidden;}  /* Hides the Fork button */
 # </style>
 # '''
-
-st.markdown(hide_st_style, unsafe_allow_html=True)
+# st.markdown(hide_st_style, unsafe_allow_html=True)
 
