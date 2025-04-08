@@ -76,7 +76,7 @@ hide_st_style = '''
 <style>
 #MainMenu {visibility:hidden;}  /* Hides the hamburger menu */
 footer {visibility:hidden;}  /* Hides the footer */
-button[title="Fork this app"] {visibility:hidden;}  /* Hides the Fork button */
+button[title="Fork"] {visibility:hidden;}  /* Hides the Fork button */
 </style>
 '''
 
