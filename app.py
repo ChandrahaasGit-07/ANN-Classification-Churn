@@ -72,23 +72,13 @@ if prediction_proba > 0.5:
 else:
     st.write('The customer is not likely to churn.')
 
-
 hide_st_style = '''
 <style>
-#MainMenu {visibility:hidden;}
-footer {visibility:hidden;}
-Fork {visibility:hidden;}
+#MainMenu {visibility:hidden;}  /* Hides the hamburger menu */
+footer {visibility:hidden;}  /* Hides the footer */
+button[title="Fork this app"] {visibility:hidden;}  /* Hides the Fork button */
 </style>
 '''
-st.markdown(hide_st_style,unsafe_allow_html=True)
 
-st.markdown(
-    """
-    <style>
-        /* Hides the fork button on Streamlit Cloud */
-        .css-1k0e35o {
-            display: none;
-        }
-    </style>
-    """, unsafe_allow_html=True
-)
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
