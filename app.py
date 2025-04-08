@@ -81,3 +81,14 @@ Fork {visibility:hidden;}
 </style>
 '''
 st.markdown(hide_st_style,unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+        /* Hides the fork button on Streamlit Cloud */
+        .css-1k0e35o {
+            display: none;
+        }
+    </style>
+    """, unsafe_allow_html=True
+)
