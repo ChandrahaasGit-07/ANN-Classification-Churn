@@ -71,3 +71,13 @@ if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
+
+hide_st_style = '''
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+fork {visibility:hidden;}
+</style>
+'''
+st.markdown(hide_st_style,unsafe_allow_html=True)
