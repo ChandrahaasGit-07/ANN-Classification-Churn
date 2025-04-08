@@ -5,17 +5,11 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
 import pickle
 
+# Naming the Project Tab
+st.set_page_config(page_title="Churn Pridection APP")
+
 # Load the trained model
 model = tf.keras.models.load_model('model.h5')
-
-hide_st_style = '''
-<style>
-#MainMenu {visibility:hidden;}
-footer {visibility:hidden;}
-</style>
-'''
-st.markdown(hide_st_style,unsafe_allow_html=True)
-
 
 # Load the encoders and scaler
 with open('label_encoder_gender.pkl', 'rb') as file:
